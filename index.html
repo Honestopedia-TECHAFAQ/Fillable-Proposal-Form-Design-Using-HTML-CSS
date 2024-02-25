@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construction Proposal Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f2f2f2;
+    }
+    form {
+        max-width: 600px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .form-group {
+        margin-bottom: 25px;
+    }
+    label {
+        font-weight: bold;
+    }
+    input[type="text"], textarea, input[type="file"] {
+        width: calc(100% - 22px);
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    textarea {
+        height: 150px;
+    }
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+    .success-message {
+        text-align: center;
+        color: green;
+        font-weight: bold;
+        margin-top: 20px;
+        display: none;
+    }
+    .logo-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+</style>
+</head>
+<body>
+
+<form id="proposalForm">
+    <div class="logo-container">
+        <img src="Transparent logo.png" alt="Company Logo" style="max-width: 200px;">
+    </div>
+    <h2>Construction Proposal Form</h2>
+    <div class="form-group">
+        <label for="clientName">Client Name:</label>
+        <input type="text" id="clientName" name="clientName" required>
+    </div>
+    <div class="form-group">
+        <label for="clientContact">Client Contact:</label>
+        <input type="text" id="clientContact" name="clientContact" required>
+    </div>
+    <div class="form-group">
+        <label for="projectDetails">Project Details:</label>
+        <textarea id="projectDetails" name="projectDetails" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="estimatedBudget">Estimated Budget:</label>
+        <input type="text" id="estimatedBudget" name="estimatedBudget" required>
+    </div>
+    <div class="form-group">
+        <label for="timeline">Timeline:</label>
+        <input type="text" id="timeline" name="timeline" required>
+    </div>
+    <div class="form-group">
+        <label for="sitePhotos">Site Photos:</label>
+        <input type="file" id="sitePhotos" name="sitePhotos">
+    </div>
+    <div class="form-group">
+        <label for="inspectionReport">Inspection Report:</label>
+        <input type="file" id="inspectionReport" name="inspectionReport">
+    </div>
+    <div class="form-group">
+        <label for="brandingElements">Branding Elements:</label>
+        <textarea id="brandingElements" name="brandingElements"></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit Proposal</button>
+    <div class="success-message">Proposal Submitted Successfully!</div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</body>
+</html>
